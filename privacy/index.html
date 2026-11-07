@@ -27,7 +27,7 @@
     <section class="page-card">
       <p class="kicker">Privacy</p>
       <h1>Feast Privacy Policy</h1>
-      <p class="last-updated">Last updated: November 4, 2026</p>
+      <p class="last-updated">Last updated: November 7, 2026</p>
       <p class="page-intro">
         Feast is designed to help you save and organize places. This page explains, in plain language,
         how Feast handles information.
@@ -37,9 +37,14 @@
     <section class="page-card">
       <h2>Your saved collection</h2>
       <p>Feast does not require a separate account to save and organize places. Your cities,
-        neighborhoods, places, notes and other saved details stay on your device and in your configured
-        Apple iCloud stores. If you share a city, its content is available to the people you invite
-        through Apple’s sharing tools. Adding Ask Feast does not move or replace those stores or shares.</p>
+        neighborhoods, places, notes and other saved details are stored on your device and in your
+        configured Apple iCloud stores. If you share a city, its content is available to the people
+        you invite through Apple’s sharing tools. Ask Feast does not replace those stores or shares,
+        but enabling online AI allows the information described below to be sent to external services.</p>
+      <p>When someone with access to a shared city enables online Ask, relevant shared content,
+        including notes contributed by others, may be processed by AI and web services as described
+        below. Turning off online AI on your device does not change another participant’s access
+        or Ask settings.</p>
       <p>Feast uses Apple Maps for place search and map information. If you allow location access,
         your location helps position the map and find nearby places. Device location is not automatically
         included in Ask Feast requests.</p>
@@ -53,21 +58,25 @@
         to authenticate access, prevent reuse and support revocation. It does not receive your saved
         collection during activation.</p>
       <p>Activation does not grant permission to send AI requests. Before your first online question,
-        Feast explains what will be shared and asks you to allow it. You can decline and continue using
-        the collection, Maps and sharing features.</p>
+        Feast explains what will be shared and asks you to allow it. If you previously enabled online AI,
+        Feast asks for fresh permission before sending the broader collection details described below.
+        You can decline and continue using the collection, Maps and sharing features.</p>
     </section>
 
     <section class="page-card">
       <h2>What goes to AI and web services</h2>
-      <p>With your permission, your question, a compact index of saved-place names, cities and cuisines,
-        and limited recent conversation context with relevant public findings and place references
-        pass through Cloudflare to OpenAI to generate answers and interpret supported app actions.
-        Saved notes, tags, visit statuses and unselected photos are excluded from this automatic AI context.</p>
-      <p>For web research, OpenAI can create queries from your question and the permitted public context.
-        Queries are sent to search services, and public pages may be retrieved. Public business websites
-        may also be inspected to verify information. Information you choose to type into a question
-        can be sent to these services and used in a search; automatic exclusions do not remove personal
-        information from your own message.</p>
+      <p>With your permission, your questions, a compact saved-place index, relevant collection details
+        and limited recent conversation context, including findings and place references, pass through
+        Cloudflare to OpenAI to generate answers, research places and interpret supported app actions.
+        Collection details can include place names, cities, neighborhoods, categories, cuisines,
+        statuses, tags, notes and saved website or Instagram links. This includes notes other people
+        added to shared collections you can access. Ask uses collections you already have permission
+        to access; enabling it does not grant access to other collections. Unselected photos are not sent.</p>
+      <p>For web research, OpenAI may use your questions and relevant collection or conversation context,
+        including saved and shared note details, to form queries sent to search providers or public sites.
+        Public pages and business websites may also be retrieved to verify information. These recipients
+        may log or retain queries under their own privacy practices. This also applies to personal
+        information you choose to type into a question.</p>
       <p>The current online release does not enable image uploads. Where image sending is available,
         only an image you select and send is uploaded; camera and location metadata are removed first.
         Images are not retained in Feast conversation history.</p>
@@ -88,8 +97,8 @@
         They are kept as needed for these purposes; contact us about access or deletion requests.</p>
       <p>Feast sends OpenAI requests with response storage disabled. This does not mean that all provider
         retention is disabled. Under OpenAI’s standard API policy, abuse-monitoring logs may contain
-        questions and answers and are normally retained for up to 30 days, with longer retention for
-        legal or safety reasons. Other service processing and caching policies may apply. Feast has not
+        collection details and other request content as well as answers. These logs are normally
+        retained for up to 30 days, with longer retention for legal or safety reasons. Other service processing and caching policies may apply. Feast has not
         enabled sharing API inputs and outputs for model training.</p>
       <p>Read <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI’s data controls</a>,
         <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare’s privacy policy</a> and
