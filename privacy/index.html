@@ -27,7 +27,7 @@
     <section class="page-card">
       <p class="kicker">Privacy</p>
       <h1>Feast Privacy Policy</h1>
-      <p class="last-updated">Last updated: November 7, 2026</p>
+      <p class="last-updated">Last updated: November 9, 2026</p>
       <p class="page-intro">
         Feast is designed to help you save and organize places. This page explains, in plain language,
         how Feast handles information.
@@ -59,7 +59,8 @@
         collection during activation.</p>
       <p>Activation does not grant permission to send AI requests. Before your first online question,
         Feast explains what will be shared and asks you to allow it. If you previously enabled online AI,
-        Feast asks for fresh permission before sending the broader collection details described below.
+        Feast asks for fresh permission for the online sharing and temporary Cloudflare recovery storage
+        described below.
         You can decline and continue using the collection, Maps and sharing features.</p>
     </section>
 
@@ -90,6 +91,18 @@
       <p>Feast keeps conversations, findings and action outcomes on your device so you can return to
         earlier chats and recover interrupted work. Device backups may include app data according to
         your Apple backup settings.</p>
+      <p>To help resume interrupted online answers, Feast temporarily stores request data and answers
+        on Cloudflare, including the question, relevant collection and conversation details, provider
+        responses and request-linked timing measurements. Each accepted online step has a 24-hour
+        recovery window. Request and raw-response copies are normally removed after usage accounting
+        is settled. Answer copies are removed earlier after your device acknowledges receipt or a
+        Stop request is processed, or at expiry.</p>
+      <p>Expired content cannot be retrieved. Service or storage outages may delay physical cleanup
+        until the service can run again. Small duplicate-prevention records normally remain for seven
+        days from acceptance and may remain longer while accounting or duplicate-prevention checks
+        are unfinished. Existing access and accounting records and provider retention are separate,
+        as described below. Some steps still require an active phone, so recovery does not guarantee
+        that every question finishes while the app is closed.</p>
       <p>Feast’s Cloudflare backend retains access and request identifiers, credential hashes,
         request-state and diagnostic codes, timing and usage information for authentication,
         duplicate prevention, recovery, security and provider usage accounting. Access and usage records,
