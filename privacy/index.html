@@ -27,7 +27,7 @@
     <section class="page-card">
       <p class="kicker">Privacy</p>
       <h1>Feast Privacy Policy</h1>
-      <p class="last-updated">Last updated: November 9, 2026</p>
+      <p class="last-updated">Last updated: November 12, 2026</p>
       <p class="page-intro">
         Feast is designed to help you save and organize places. This page explains, in plain language,
         how Feast handles information.
@@ -58,10 +58,8 @@
         to authenticate access, prevent reuse and support revocation. It does not receive your saved
         collection during activation.</p>
       <p>Activation does not grant permission to send AI requests. Before your first online question,
-        Feast explains what will be shared and asks you to allow it. If you previously enabled online AI,
-        Feast asks for fresh permission for the online sharing and temporary Cloudflare recovery storage
-        described below.
-        You can decline and continue using the collection, Maps and sharing features.</p>
+        Feast explains what will be shared and asks you to allow it. You can decline and continue
+        using the collection, Maps and sharing features.</p>
     </section>
 
     <section class="page-card">
@@ -78,9 +76,7 @@
         Public pages and business websites may also be retrieved to verify information. These recipients
         may log or retain queries under their own privacy practices. This also applies to personal
         information you choose to type into a question.</p>
-      <p>The current online release does not enable image uploads. Where image sending is available,
-        only an image you select and send is uploaded; camera and location metadata are removed first.
-        Images are not retained in Feast conversation history.</p>
+      <p>The current online release does not enable image uploads.</p>
       <p>Ask can make supported collection changes when you instruct it or use a Save action.
         It asks for clarification when necessary, and available Undo actions are shown after persistence.
         These changes use Feast’s existing storage and sharing permissions.</p>
@@ -89,23 +85,15 @@
     <section class="page-card">
       <h2>Storage and retention</h2>
       <p>Feast keeps conversations, findings and action outcomes on your device so you can return to
-        earlier chats and recover interrupted work. Device backups may include app data according to
+        earlier chats. Device backups may include app data according to
         your Apple backup settings.</p>
-      <p>To help resume interrupted online answers, Feast temporarily stores request data and answers
-        on Cloudflare, including the question, relevant collection and conversation details, provider
-        responses and request-linked timing measurements. Each accepted online step has a 24-hour
-        recovery window. Request and raw-response copies are normally removed after usage accounting
-        is settled. Answer copies are removed earlier after your device acknowledges receipt or a
-        Stop request is processed, or at expiry.</p>
-      <p>Expired content cannot be retrieved. Service or storage outages may delay physical cleanup
-        until the service can run again. Small duplicate-prevention records normally remain for seven
-        days from acceptance and may remain longer while accounting or duplicate-prevention checks
-        are unfinished. Existing access and accounting records and provider retention are separate,
-        as described below. Some steps still require an active phone, so recovery does not guarantee
-        that every question finishes while the app is closed.</p>
+      <p>Online answer recovery is disabled in the current release. Feast does not currently store
+        request and answer copies on Cloudflare for later recovery. Leaving Ask Feast may interrupt
+        an answer. A request already sent to an external service may still finish and be processed
+        under that service’s retention practices.</p>
       <p>Feast’s Cloudflare backend retains access and request identifiers, credential hashes,
-        request-state and diagnostic codes, timing and usage information for authentication,
-        duplicate prevention, recovery, security and provider usage accounting. Access and usage records,
+        request-state and diagnostic codes, and usage information for authentication,
+        duplicate prevention, security and provider usage accounting. Access and usage records,
         including revoked access and unresolved requests, do not currently expire automatically.
         They are kept as needed for these purposes; contact us about access or deletion requests.</p>
       <p>Feast sends OpenAI requests with response storage disabled. This does not mean that all provider
